@@ -1,0 +1,164 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100vh;
+}
+
+.site-nav {
+  width: 120px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 999;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.nav-links svg {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-links svg path {
+  fill: #fefefe;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.nav-links li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #281343;
+  text-align: center;
+  line-height: 40px;
+}
+
+.hero {
+  padding: 4% 0;
+  margin: 0;
+  background: #281343;
+  background: linear-gradient(140deg, #281343, #272c30);
+  background-size: 400% 400%;
+  animation: gradientflow 10s ease infinite;
+}
+
+.hero-content {
+  font-family: 'Tomorrow';
+  text-align: center;
+}
+
+.hero-content .hero-title {
+  font-size: 3.5rem;
+  font-weight: 200;
+  color: #fefefe;
+}
+
+.hero-content .hero-subtitle {
+  font-size: 1.5rem;
+}
+
+@keyframes gradientflow {
+  0%{background-position:15% 0%}
+  50%{background-position:90% 100%}
+  100%{background-position:15% 0%}
+}
+
+.post-wrapper {
+  margin: 50px 0 0;
+}
+
+.post-box {
+  padding: 0 0 30px;
+  margin: 0 0 90px;
+  border-bottom: 1px solid #444444;
+}
+
+.post-box_preview .post-title {
+  margin: 0 0 20px;
+  color: #fefefe;
+  font-family: 'Tomorrow';
+  font-size: 2rem;
+}
+
+.post-box_preview .post-excerpt {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.post-box_meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-box_meta-info .post-date {
+  margin: 0;
+}
+
+.site-footer {
+  padding: 15px 10px;
+  background-color: #222;
+}
+
+.site-footer.fixed-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.site-footer p {
+  margin: 0;
+  font-family: 'Tomorrow';
+  text-align: center;
+}
+
+.post-content_meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0 15px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid #fefefe;
+}
+
+.post-content_meta-info p {
+  margin: 0;
+}
+
+.post-content {
+  margin: 0 0 40px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.post-content p {
+  margin: 0 0 20px;
+}
+
+.login-wrapper {
+  padding: 8% 0 4%;
+}
+
+.login-wrapper input{
+  margin: 0 0 15px;
+}
+
+.login-wrapper .btn {
+  margin: 30px 0 0;
+}
